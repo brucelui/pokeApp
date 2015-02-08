@@ -15,8 +15,8 @@ pokeApp.config(['$routeProvider',
       controller: 'pokeController'
     })
 
-    .when('/result', {
-      templateUrl: 'app_pages/quizA_result.html',
+    .when('/qB', {
+      templateUrl: 'app_pages/quizB.html',
       controller: 'pokeController'
     })
 

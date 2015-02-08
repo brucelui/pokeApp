@@ -1,0 +1,148 @@
+<!-- Quiz B -->
+	<section name="quizA question1" class="quizA">
+		<div class="QB_container">
+			<h1><a href="#/">< MAIN MENU</a></h1>
+
+			<div class="quiz_content" ng-if="questionValue == 0">
+				<p><h2>QUESTION 1</h2></p>
+				<p>WHAT IS YOUR FAVOURITE STARTER POKEMON?</p>
+
+				<div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(1)">PIKACHU</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(2)">CHARMANDER</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(3)">SQUIRTLE</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(4)">BULBASAUR</button></div>
+			</div>
+
+			<div class="quiz_content" ng-if="questionValue == 1">
+				<p><h2>QUESTION 2</h2></p>
+				<p>WHERE WOULD YOU LIVE?</p>
+
+				<div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(1)">SMALL TOWN</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(2)">MOUNTAINS</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(3)">BIG CITY</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(4)">NEAR THE OCEAN</button></div>
+			</div>
+
+			<div class="quiz_content" ng-if="questionValue == 2">
+				<p><h2>QUESTION 3</h2></p>
+				<p>WHAT DO YOU WANT TO BECOME?</p>
+
+				<div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(1)">POKEMON CHAMPION</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(2)">POKEMON BREEDER</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(3)">POKEMON PROFESSOR</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(4)">POKEMON GYM LEADER</button></div>
+			</div>
+
+			<div class="quiz_content" ng-if="questionValue == 3">
+				<p><h2>QUESTION 4</h2></p>
+				<p>FIRST THING YOU DO WHEN YOU SEE A WILD POKEMON?</p>
+
+				<div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(1)">BATTLE IT</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(2)">CATCH IT</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(3)">RUN AWAY</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(4)">DO NOTHING</button></div>
+			</div>
+
+			<div class="quiz_content" ng-if="questionValue == 4">
+				<p><h2>QUESTION 5</h2></p>
+				<p>HOW MANY POKEMON WOULD YOU LIKE TO BRING ALONG?</p>
+
+				<div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(1)">6</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(2)">5</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(3)">4</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(4)">3</button></div>
+			</div>
+
+			<div class="result_content" ng-if="questionValue ==5">
+				<!-- RESULT A -->
+				<div ng-if="answerValue >= 5 && answerValue <= 8">
+				<p align="center"><img src="./images/red.png"></p>
+				<p><h3>YOU GOT</h3></p>
+				<p><h4>RED</h4></p>
+
+				<p><h5>You are the best. You pretty much own everyone and continue to be the very best.</h5></p>
+				</div>
+
+				<!-- RESULT B -->
+				<div ng-if="answerValue >= 9 && answerValue <= 11">
+				<p align="center"><img src="./images/brock.png"></p>
+				<p><h3>YOU GOT</h3></p>
+				<p><h4>BROCK</h4></p>
+
+				<p><h5>You are the type of person that doesn't care about winning but more about breeding strong and healthy Pokemon.</h5></p>
+				</div>
+
+				<!-- RESULT C -->
+				<div ng-if="answerValue >= 12 && answerValue <= 14">
+				<p align="center"><img src="./images/teamrocket.png"></p>
+				<p><h3>YOU GOT</h3></p>
+				<p><h4>TEAM ROCKET</h4></p>
+
+				<p><h5>You are a bit of everything. You are good person and bad one, depending on who you are with and in what kind of situation.</h5></p>
+				</div>
+
+				<!-- RESULT D -->
+				<div ng-if="answerValue >= 15 && answerValue <= 17">
+				<p align="center"><img src="./images/professoroak.png"></p>
+				<p><h3>YOU GOT</h3></p>
+				<p><h4>PROFESSOR OAK</h4></p>
+
+				<p><h5>You are the type of person that throws errands at people that have lower status than you.</h5></p>
+				</div>
+
+				<!-- RESULT E -->
+				<div ng-if="answerValue >= 18 && answerValue <= 20">
+				<p align="center"><img src="./images/giovanni.png"></p>
+				<p><h3>YOU GOT</h3></p>
+				<p><h4>GIOVANNI</h4></p>
+
+				<p><h5>You are the type of person that doesn't care about anything other than taking over the world.</h5></p>
+				</div>
+			</div>
+
+			</div>
+			<!-- test to see the stored array -->
+		<!--<div class="testBox">Question Value: {{questionValue}}
+			<br>Answer Value: {{answerValue}}
+		</div> -->
+		</div>
+
+		<script>
+		var output = 0;
+		</script>
+	</section>
