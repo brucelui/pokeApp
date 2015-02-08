@@ -1,0 +1,148 @@
+<!-- Quiz C -->
+	<section name="quizA question1" class="quizA">
+		<div class="QC_container">
+			<h1><a href="#/">< MAIN MENU</a></h1>
+
+			<div class="quiz_content" ng-if="questionValue == 0">
+				<p><h2>QUESTION 1</h2></p>
+				<p>WHICH DO YOU PREFER?</p>
+
+				<div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(1)">FIRE or WATER</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(2)">GRASS or ELECTRIC</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(3)">DRAGON or NORMAL</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(4)">PSYCHIC or FAIRY</button></div>
+			</div>
+
+			<div class="quiz_content" ng-if="questionValue == 1">
+				<p><h2>WHICH DO YOU PREFER?</h2></p>
+				<p>?</p>
+
+				<div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(1)">STEEL or POISON</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(2)">ROCK or BUG</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(3)">GHOST or GROUND or ICE</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(4)">FLYING or DARK or FIGHTING</button></div>
+			</div>
+
+			<div class="quiz_content" ng-if="questionValue == 2">
+				<p><h2>QUESTION 3</h2></p>
+				<p>WHAT DO YOU PREFER?</p>
+
+				<div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(1)">STATUS CHANGE</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(2)">CONFUSION</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(3)">STAT BOOST</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(4)">STAT DECREASE</button></div>
+			</div>
+
+			<div class="quiz_content" ng-if="questionValue == 3">
+				<p><h2>QUESTION 4</h2></p>
+				<p>WHICH DO YOU PREFER?</p>
+
+				<div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(1)">SOLO BATTLE</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(2)">DUO BATTLE</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(3)">TRIPLE BATTLE</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(4)">ROTATION BATTLE</button></div>
+			</div>
+
+			<div class="quiz_content" ng-if="questionValue == 4">
+				<p><h2>QUESTION 5</h2></p>
+				<p>WHICH DO YOU PREFER?</p>
+
+				<div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(1)">ATTACK</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(2)">DEFENSE</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(3)">SPEED</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(4)">HP</button></div>
+			</div>
+
+			<div class="result_content" ng-if="questionValue ==5">
+				<!-- RESULT A -->
+				<div ng-if="answerValue >= 5 && answerValue <= 8">
+				<p align="center"><img src="./images/dragondance.png"></p>
+				<p><h3>YOU GOT</h3></p>
+				<p><h4>DRAGON DANCE</h4></p>
+
+				<p><h5>You like to be in charge, while overwhelming your opponent with your attacks.</h5></p>
+				</div>
+
+				<!-- RESULT B -->
+				<div ng-if="answerValue >= 9 && answerValue <= 11">
+				<p align="center"><img src="./images/protect.png"></p>
+				<p><h3>YOU GOT</h3></p>
+				<p><h4>PROTECT</h4></p>
+
+				<p><h5>You like to create a barrier between you and your opponent to buy time to analyze how to beat them.</h5></p>
+				</div>
+
+				<!-- RESULT C -->
+				<div ng-if="answerValue >= 12 && answerValue <= 14">
+				<p align="center"><img src="./images/hyperbeam.png"></p>
+				<p><h3>YOU GOT</h3></p>
+				<p><h4>HYPER BEAM</h4></p>
+
+				<p><h5>You just obliterate your opponents with massive damage attacks and not giving a damn about anyone else.</h5></p>
+				</div>
+
+				<!-- RESULT D -->
+				<div ng-if="answerValue >= 15 && answerValue <= 17">
+				<p align="center"><img src="./images/stealthrocks.png"></p>
+				<p><h3>YOU GOT</h3></p>
+				<p><h4>STEALTH ROCKS</h4></p>
+
+				<p><h5>You surround your opponents with obstacles while you try to attack them from the backline.</h5></p>
+				</div>
+
+				<!-- RESULT E -->
+				<div ng-if="answerValue >= 18 && answerValue <= 20">
+				<p align="center"><img src="./images/moonblast.png"></p>
+				<p><h3>YOU GOT</h3></p>
+				<p><h4>MOONBLAST</h4></p>
+
+				<p><h5>You like to attack all your opponents at once while decreasing their chances of fighting back.</h5></p>
+				</div>
+			</div>
+
+			</div>
+			<!-- test to see the stored array -->
+		<!--<div class="testBox">Question Value: {{questionValue}}
+			<br>Answer Value: {{answerValue}}
+		</div> -->
+		</div>
+
+		<script>
+		var output = 0;
+		</script>
+	</section>

@@ -20,6 +20,11 @@ pokeApp.config(['$routeProvider',
       controller: 'pokeController'
     })
 
+    .when('/qC', {
+      templateUrl: 'app_pages/quizC.html',
+      controller: 'pokeController'
+    })
+
     .otherwise( {
     	templateUrl: 'app_pages/main.html'
     });
