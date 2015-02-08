@@ -1,0 +1,148 @@
+<!-- Quiz A -->
+	<section name="quizA question1" class="quizA">
+		<div class="QA_container">
+			<h1><a href="#/">< MAIN MENU</a></h1>
+
+			<div class="quiz_content" ng-if="questionValue == 0">
+				<p><h2>QUESTION 1</h2></p>
+				<p>WHAT WOULD YOU USE TO PROTECT YOURSELF?</p>
+
+				<div class="col-xs-6 col-md-3">
+					  <form action=""><button name="btn1" class="numberbutton" ng-click="updateOutput(1)">HARDEN</button></form></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <form action=""><button name="btn1" class="numberbutton" ng-click="updateOutput(2)">WITHDRAW</button></form></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <form action=""><button name="btn1" class="numberbutton" ng-click="updateOutput(3)">REFLECT</button></form></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <form action=""><button name="btn1" class="numberbutton" ng-click="updateOutput(4)">DETECT</button></form></div>
+			</div>
+
+			<div class="quiz_content" ng-if="questionValue == 1">
+				<p><h2>QUESTION 2</h2></p>
+				<p>WHICH ATTACK BEST SUITS YOU?</p>
+
+				<div class="col-xs-6 col-md-3">
+					  <form action=""><button name="btn1" class="numberbutton" ng-click="updateOutput(1)">FLAMETHROWER</button></form></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <form action=""><button name="btn1" class="numberbutton" ng-click="updateOutput(2)">HYDRO PUMP</button></form></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <form action=""><button name="btn1" class="numberbutton" ng-click="updateOutput(3)">SOLARBEAM</button></form></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <form action=""><button name="btn1" class="numberbutton" ng-click="updateOutput(4)">SPLASH</button></form></div>
+			</div>
+
+			<div class="quiz_content" ng-if="questionValue == 2">
+				<p><h2>QUESTION 3</h2></p>
+				<p>WHICH ABILITY WOULD YOU WANT?</p>
+
+				<div class="col-xs-6 col-md-3">
+					  <form action=""><button name="btn1" class="numberbutton" ng-click="updateOutput(1)">FLASH FIRE</button></form></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <form action=""><button name="btn1" class="numberbutton" ng-click="updateOutput(2)">BULLETPROOF</button></form></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <form action=""><button name="btn1" class="numberbutton" ng-click="updateOutput(3)">CHLOROPHYLL</button></form></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <form action=""><button name="btn1" class="numberbutton" ng-click="updateOutput(4)">LEVITATE</button></form></div>
+			</div>
+
+			<div class="quiz_content" ng-if="questionValue == 3">
+				<p><h2>QUESTION 4</h2></p>
+				<p>WHAT ARE YOU WEAK AGAINST?</p>
+
+				<div class="col-xs-6 col-md-3">
+					  <form action=""><button name="btn1" class="numberbutton" ng-click="updateOutput(1)">FLYING</button></form></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <form action=""><button name="btn1" class="numberbutton" ng-click="updateOutput(2)">BUG</button></form></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <form action=""><button name="btn1" class="numberbutton" ng-click="updateOutput(3)">ICE</button></form></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <form action=""><button name="btn1" class="numberbutton" ng-click="updateOutput(4)">STEEL</button></form></div>
+			</div>
+
+			<div class="quiz_content" ng-if="questionValue == 4">
+				<p><h2>QUESTION 5</h2></p>
+				<p>WHICH CITY WOULD YOU WANT TO BE GYM LEADER AS?</p>
+
+				<div class="col-xs-6 col-md-3">
+					  <form action=""><button name="btn1" class="numberbutton" ng-click="updateOutput(1)">CINNABAR ISLAND</button></form></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <form action=""><button name="btn1" class="numberbutton" ng-click="updateOutput(2)">CERULEAN CITY</button></form></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <form action=""><button name="btn1" class="numberbutton" ng-click="updateOutput(3)">CELADON CITY</button></form></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <form action=""><button name="btn1" class="numberbutton" ng-click="updateOutput(4)">SAFFRON CITY</button></form></div>
+			</div>
+
+			<div class="result_content" ng-if="questionValue ==5">
+				<!-- RESULT A -->
+				<div ng-if="answerValue >= 5 && answerValue <= 8">
+				<p align="center"><img src="../images/charizard.png"></p>
+				<p><h3>YOU GOT</h3></p>
+				<p><h4>FIRE</h4></p>
+
+				<p><h5>You are a furious person, you burn down everything. If you were a Pokemon, you would burn the world down.</h5></p>
+				</div>
+
+				<!-- RESULT B -->
+				<div ng-if="answerValue >= 9 && answerValue <= 11">
+				<p align="center"><img src="../images/blastoise.png"></p>
+				<p><h3>YOU GOT</h3></p>
+				<p><h4>WATER</h4></p>
+
+				<p><h5>You are a slippery person, you slip on everything. If you were a Pokemon, you would slip through the world into another dimension.</h5></p>
+				</div>
+
+				<!-- RESULT C -->
+				<div ng-if="answerValue >= 12 && answerValue <= 14">
+				<p align="center"><img src="../images/muk.png"></p>
+				<p><h3>YOU GOT</h3></p>
+				<p><h4>POISON</h4></p>
+
+				<p><h5>You are a smelly person, your stink rots everything. If you were a Pokemon, the world would turn into a garbage dump.</h5></p>
+				</div>
+
+				<!-- RESULT D -->
+				<div ng-if="answerValue >= 15 && answerValue <= 17">
+				<p align="center"><img src="../images/dragonite.png"></p>
+				<p><h3>YOU GOT</h3></p>
+				<p><h4>DRAGON</h4></p>
+
+				<p><h5>You are a mysterious person, you can destroy everything if you want to. If you were a Pokemon, the world's fate lies in your hands.</h5></p>
+				</div>
+
+				<!-- RESULT E -->
+				<div ng-if="answerValue >= 18 && answerValue <= 20">
+				<p align="center"><img src="../images/jigglypuff.png"></p>
+				<p><h3>YOU GOT</h3></p>
+				<p><h4>FAIRY</h4></p>
+
+				<p><h5>You are a majestic person, you can fix everything. If you were a Pokemon, you have the ability to light up the world.</h5></p>
+				</div>
+			</div>
+
+			</div>
+			<!-- test to see the stored array -->
+		<!--<div class="testBox">Question Value: {{questionValue}}
+			<br>Answer Value: {{answerValue}}
+		</div> -->
+		</div>
+
+		<script>
+		var output = 0;
+		</script>
+	</section>

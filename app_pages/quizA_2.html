@@ -1,0 +1,34 @@
+<!-- Quiz A -->
+	<section name="quizA question1" class="quizA">
+		<div class="QA_container">
+			<h1><a href="#/">< MAIN MENU</a></h1>
+
+			<div class="quiz_content">
+				<p><h2>QUESTION 2</h2></p>
+				<p>WHICH ATTACK SUITS YOU THE BEST?</p>
+
+				<!-- Test Area -->
+				  <div class="col-xs-6 col-md-3">
+					  <form action=""><button name="btn1" class="numberbutton" ng-click="output = output + 4">FLAME THROWER</button></form></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+				  	<button name="btn2" class="numberbutton" value="2" ng-click='updateOutput(2)'>HYDRO PUMP</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+				  	<button name="btn3" class="numberbutton" value="3" ng-click='updateOutput(3)'>SOLARBEAM</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+				  	<button name="btn4" class="numberbutton" value="4" ng-click='updateOutput(4)'>SPLASH</button></div>
+				  	{{output}} {{ques}}
+
+				  <div ng-if="output == 8">holyshit</div>
+			</div>
+			<div class="clearfix"></div>
+				<a class="whitebutton" href="#/result">NEXT</a>
+				
+				<button class="plusOne">+1</button>
+				<button class="plusTwo">+2</button>
+				<button class="plusThree">+3</button>
+				<button class="plusFour">+4</button>
+		</div>
+	</section>
