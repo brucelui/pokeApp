@@ -1,0 +1,148 @@
+<!-- Quiz D -->
+	<section name="quizA question1" class="quizA">
+		<div class="QD_container">
+			<h1><a href="#/">< MAIN MENU</a></h1>
+
+			<div class="quiz_content" ng-if="questionValue == 0">
+				<p><h2>QUESTION 1</h2></p>
+				<p>WHERE DO YOU LIVE?</p>
+
+				<div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(1)">SMALL ISLAND</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(2)">CAVE</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(3)">DEEP OCEAN</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(4)">MOUNTAINS</button></div>
+			</div>
+
+			<div class="quiz_content" ng-if="questionValue == 1">
+				<p><h2>QUESTION 2</h2></p>
+				<p>YOU ARE ...</p>
+
+				<div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(1)">AM FRIENDLY</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(2)">CAN TALK</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(3)">CREATE DISASTER</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(4)">LIKE TO BE ALONE</button></div>
+			</div>
+
+			<div class="quiz_content" ng-if="questionValue == 2">
+				<p><h2>QUESTION 3</h2></p>
+				<p>YOU ARE ...</p>
+
+				<div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(1)">SMART</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(2)">EASILY ANGERED</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(3)">LOVED</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(4)">LONELY</button></div>
+			</div>
+
+			<div class="quiz_content" ng-if="questionValue == 3">
+				<p><h2>QUESTION 4</h2></p>
+				<p>FIRST THING THAT COMES TO MIND?</p>
+
+				<div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(1)">SLEEP</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(2)">DESTROY</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(3)">RUN AWAY</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(4)">IGNORE</button></div>
+			</div>
+
+			<div class="quiz_content" ng-if="questionValue == 4">
+				<p><h2>QUESTION 5</h2></p>
+				<p>WHAT WOULD YOU RATHER BE?</p>
+
+				<div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(1)">SMALL + FAST</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(2)">SMALL + STRONG</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(3)">BIG + FAST</button></div>
+				  
+				  <div class="col-xs-6 col-md-3">
+					  <button class="numberbutton" ng-click="updateOutput(4)">BIG + STRONG</button></div>
+			</div>
+
+			<div class="result_content" ng-if="questionValue ==5">
+				<!-- RESULT A -->
+				<div ng-if="answerValue >= 5 && answerValue <= 8">
+				<p align="center"><img src="./images/mew.png"></p>
+				<p><h3>YOU GOT</h3></p>
+				<p><h4>MEW</h4></p>
+
+				<p><h5>You are the mysterious and tend to run away from others but will slowly befriend them if they cause you no harm.</h5></p>
+				</div>
+
+				<!-- RESULT B -->
+				<div ng-if="answerValue >= 9 && answerValue <= 11">
+				<p align="center"><img src="./images/meowth.png"></p>
+				<p><h3>YOU GOT</h3></p>
+				<p><h4>TEAM ROCKET MEOWTH</h4></p>
+
+				<p><h5>You are the only existant pokemon in the world that can speak like a human, and your crazy amounts of sarcasm are your specialty.</h5></p>
+				</div>
+
+				<!-- RESULT C -->
+				<div ng-if="answerValue >= 12 && answerValue <= 14">
+				<p align="center"><img src="./images/groudon.png"></p>
+				<p><h3>YOU GOT</h3></p>
+				<p><h4>GROUDON</h4></p>
+
+				<p><h5>You tend to destroy everything you see, even if it's by accident.</h5></p>
+				</div>
+
+				<!-- RESULT D -->
+				<div ng-if="answerValue >= 15 && answerValue <= 17">
+				<p align="center"><img src="./images/lugia.png"></p>
+				<p><h3>YOU GOT</h3></p>
+				<p><h4>LUGIA</h4></p>
+
+				<p><h5>You try to protect others but can bring disasters along. You are still loved though.</h5></p>
+				</div>
+
+				<!-- RESULT E -->
+				<div ng-if="answerValue >= 18 && answerValue <= 20">
+				<p align="center"><img src="./images/zygarde.png"></p>
+				<p><h3>YOU GOT</h3></p>
+				<p><h4>ZYGARDE</h4></p>
+
+				<p><h5>No explanation...</h5></p>
+				</div>
+			</div>
+
+			</div>
+			<!-- test to see the stored array -->
+		<!--<div class="testBox">Question Value: {{questionValue}}
+			<br>Answer Value: {{answerValue}}
+		</div> -->
+		</div>
+
+		<script>
+		var output = 0;
+		</script>
+	</section>
