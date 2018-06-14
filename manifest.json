@@ -1,0 +1,9 @@
+{
+  "short_name": "pokeApp",
+  "name": "pokeApp",
+  "start_url": "/maps/?source=pwa",
+  "background_color": "#D32F2F",
+  "display": "standalone",
+  "scope": "/maps/",
+  "theme_color": "#D32F2F"
+}
